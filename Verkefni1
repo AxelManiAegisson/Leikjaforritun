@@ -1,0 +1,34 @@
+Verkefni 1
+
+1. 
+  Gameloop er lykkjan sem keyiri leikinn. Hennar hlrutverke er að passa að leikurinn keyrir rétt t.d. ef þú værir á hraðri vél þá gæti       leikurinn leyst rammanna hraðar þannig að það væri eins og leikurinn væri sped up, gameloopan sér líka um að passa að leikurinn keyri     þótt að hann fái ekkert input frá notandanum t.d. leikurinn myndi ekki frosna ef notandinn myndi ekki gera neytt, animations og hlóð       væri ennþá í gangi.
+
+2.
+  Leikjavél er forrit sem gefur notandanum kleyft að gera leik með verkfærum sem leikjavélinn hefur með sér. Maður getur importað assets,
+  hljóð, animations, lýsingu, og margt fleirra til að nota í senu í leik. Unity er dæmi um leikjavél sem er mjög góð fyrir fólk sem er að 
+  byrja að gera leiki í fyrsta sinn og er að gera 2d leiki eða mobile leiki, það er líka frekar auðvelt að nota hana. Unreal engine er       hinsvegar mjög góð fyrir þá sem ætla að gera mjög fallega 3d leiki eða leiki fyrir console eða pc. Unity er gefins en ef þú ert alvara 
+  um að gefa út leiki og að græða þá væri best að borga fyrir hana. Unreal er gefins en ef þú ætlar að fara að græða einhvað þá þarftu að 
+  borga 5% í roalty fee.
+  
+ 3.
+  Í leikjum eru svokölluð hitboxes sem eru ákveðin svæði í kringum hlut eða character í leiknum sem gera annaðhvort einhvað þegar annar 
+  hlutur eða character kemur við þá eða þeir gera ekki neitt eða stoðva hlutinn þegar einhvað snertir þá. Til að passa að að hlutirnir 
+  fara ekki í gegnum hvort annað þá er t.d. notaður svona kóði:
+  
+  BOOL TestAABBOverlap(AABB* a, AABB* b)
+{
+    float d1x = b->min.x - a->max.x;
+    float d1y = b->min.y - a->max.y;
+    float d2x = a->min.x - b->max.x;
+    float d2y = a->min.y - b->max.y;
+
+    if (d1x > 0.0f || d1y > 0.0f)
+        return FALSE;
+
+    if (d2x > 0.0f || d2y > 0.0f)
+        return FALSE;
+
+    return TRUE;
+}
+https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects
+  
