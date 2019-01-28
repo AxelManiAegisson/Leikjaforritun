@@ -32,3 +32,32 @@ Verkefni 1
 }
 https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects
   
+4.
+Asset er hlutur í leiknum sem er sýnilegur og er hægt að interacta við t.d. tré, brú, bíll o.fl.
+
+5.
+Game objects eru bara hlutir í leiknum t.d. characters, camera, lýsing o.fl. 
+En til að objectin gera einhvað þá þarf að gefa þeim components t.d ljós.
+
+6. 
+Prefab er basically game object sem þú ætlar að nota oft eins og ef það eiga að vera npc's eða tré þá er gott að nota 
+sömu eiginleika og eitt object og bar copy og pastea.
+
+7.
+Það er nota þrýhirninga í 3d modelum til að gera modelin af því að það er hægt að tengja þá vel og það er vani að nota þá.
+
+8.
+Tags eru hlutir sem þú notar til að merkja game objects og þannig að það er auðveldara að vita hvað þeir gera.
+Layers eru notaði til að gera hóp af hlutum sem eru með svipaða eiginleika.
+
+9.
+a) Þú getur séð allt sem er í senunni.
+b) Þú sérð það sem spilarinn myndi sjáþ
+c) Próject er verkefnið eða leikurinn þinn sem þú ert að vinna í.
+d) Í hierarchy glugganum geturu séð alla game objectana í lista.
+e) Inspector gluggin sýnir allt um game objectið sem þú ert búinn að velja og þú getur breytt properties í honum.
+
+
+
+
+
